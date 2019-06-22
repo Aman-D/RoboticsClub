@@ -30,5 +30,6 @@ show.pause('events');
   .to('.prj-content',1,{width:"100%"})
   .to('.prj-intro h3, .prj-intro p, .prj-intro button',0.5,{opacity:0})
   .set('.pr-slider,.prev,.next,.dots',{css:{display:"block"}})
-  .to('.pr-slider,.prev,.next,.dots',1,{opacity:1});
+  .to('.pr-slider,.prev,.next,.dots',1,{opacity:1})
+  .to('.prj-intro',1,{backgroundColor:"rgba(24, 22, 22)"});
   }

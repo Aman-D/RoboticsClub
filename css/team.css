@@ -1,0 +1,188 @@
+#team{
+    padding-top:100px;
+    width:100%;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    background: url(/img/teambk.jpg);
+    background-size: cover;
+    position: relative;
+}
+.fin-div,.c-div,.co-div,.arrow1,.arrow2{
+    position:relative;
+    display: flex;
+    justify-content:center;;
+    align-items:center;
+    height:auto;
+}
+.fin-div,.c-div,.co-div{
+    z-index: 5;
+}
+.arrow1{
+    height:60px
+}
+.arrow2{
+    height:60px;
+}
+.fin-img,.c-img,.c01-img,.c02-img{
+    height:150px;
+    width:150px;
+    border-radius: 50%;
+    position:relative;
+}
+.fin-img img,.c-img img,.c01-img img,.c02-img img{
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+    object-fit: cover;
+    transition:all 0.5s ease;
+}
+.arrow1::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left:50%;
+    transform: translateX(-50%);
+    height:100px;
+    width:10px;
+    background-color: black;
+}
+.arrow2::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left:50%;
+    transform: translateX(-50%) rotateZ(45deg);
+    height:150px;
+    width:10px;
+    background-color: black;
+    transform-origin: top;
+}
+.arrow2::after{
+    content:'';
+    position: absolute;
+    top: 0;
+    left:50%;
+    transform: translateX(-50%) rotateZ(-45deg);
+    height:150px;
+    width:10px;
+    background-color: black;
+    transform-origin: top;
+}
+.c01-img{
+    transform: translateX(-50px);
+}
+.c02-img{
+    transform: translateX(50px);
+}
+
+.fin-ifo,.c-ifo,.c01-ifo,.c02-ifo{
+    position:absolute;
+    top:0;
+    width: 300px;
+    height:100%;
+    background-color: rgb(14, 11, 24);
+    transition:all 0.5s ease;
+    opacity:0;
+    color:white;
+    padding:20px 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family:var(--font2);
+    letter-spacing: 2px;
+    display:flex;
+    flex-direction:column;
+}
+
+.fa{
+    color:white;
+}
+.fin-ifo{
+    left:-350px;
+    clip-path: polygon(0% 0%, 0% 100%, 90% 100%, 90% 70%, 100% 50%, 90% 30%, 90% 0);
+    padding-right:50px;
+}
+.c-ifo{
+    right:-350px;
+    clip-path: polygon(100% 0, 100% 100%, 10% 100%, 10% 69%, 0 50%, 10% 30%, 10% 1%);
+    padding-left:40px;
+}
+.c01-ifo{
+    left:-350px;
+    clip-path: polygon(0% 0%, 0% 100%, 90% 100%, 90% 70%, 100% 50%, 90% 30%, 90% 0);
+    padding-right:50px;
+}
+.c02-ifo{
+    left:200px;
+    clip-path: polygon(100% 0, 100% 100%, 10% 100%, 10% 69%, 0 50%, 10% 30%, 10% 1%);
+    padding-left:40px;
+}
+
+.fin-img:hover .fin-ifo{
+    opacity: 1;
+}
+.c-img:hover .c-ifo{
+    opacity: 1;
+}
+.c01-img:hover .c01-ifo{
+    opacity: 1;
+}
+.c02-img:hover .c02-ifo{
+    opacity: 1;
+}
+
+#team .shadow{
+    box-shadow: -1px 0px 2px 6px rgb(14, 11, 24);
+}
+.social{
+    display: flex;
+    justify-content: center;
+    padding:10px;
+
+}
+.social i{
+    padding:0 7px;
+}
+
+
+
+
+.team-intro{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background-color: #181616;
+    z-index: 50;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateX(0);
+}
+.team-intro div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-family:var(--font2);
+
+}
+#change-text{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100px;
+    font-family:var(--font1);
+    letter-spacing:8px;
+    text-transform: uppercase;
+    font-size:5rem; 
+    stroke-width: 4px;
+}
+#we,#are,#the{
+    opacity:0;
+    padding:10px
+}

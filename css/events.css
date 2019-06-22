@@ -11,7 +11,7 @@
     flex-direction:column;
     z-index: 99;
     background-color: white;
-   
+    height:auto;
     background-color: #F3F3F3;
 }
 .events-nav{
