@@ -13,6 +13,8 @@
     background-color: white;
     height:auto;
     background-color: #F3F3F3;
+    height:100vh;
+    overflow-y: scroll;
 }
 .events-nav{
     display: flex;

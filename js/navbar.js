@@ -15,6 +15,9 @@ projects
 const teams  = new TimelineMax();
 teams
 .to(".navButton-text",0.2,{text:"team"});
+const gallery  = new TimelineMax();
+gallery
+.to(".navButton-text",0.2,{text:"gallery"});
 
 const team = new TimelineMax();
 team
@@ -35,7 +38,7 @@ team
 
  const scene1 = new ScrollMagic.Scene({
     trigger:"#bars",
-    offset:765,
+    offset:805,
     duration:50,
     reverse:true,
     triggerHook:0.5,
@@ -46,7 +49,7 @@ team
 
 const scene2 = new ScrollMagic.Scene({
     trigger:"#achievements",
-    offset:1410,
+    offset:1350,
     duration:50,
     reverse:true,
     triggerHook:0.5,
@@ -68,7 +71,7 @@ const scene3 = new ScrollMagic.Scene({
 
 const scene4 = new ScrollMagic.Scene({
     trigger:"#projects",
-    offset:2800,
+    offset:2850,
     duration:50,    
     reverse:true,
     triggerHook:0.5,
@@ -76,13 +79,24 @@ const scene4 = new ScrollMagic.Scene({
 .setTween(teams)
 .addIndicators()
 .addTo(controller);
-
+/* Team intro scene */
 const scene5 = new ScrollMagic.Scene({
     trigger:"#team",
-    offset:2900,
+    offset:2800,
     reverse:false,
     triggerHook:0.5,
 }) 
 .setTween(team)
+.addIndicators()
+.addTo(controller);
+
+const scene6 = new ScrollMagic.Scene({
+    trigger:"#gallery",
+    offset:3600,
+    duration:50,    
+    reverse:true,
+    triggerHook:0.5,
+})
+.setTween(gallery)
 .addIndicators()
 .addTo(controller);
